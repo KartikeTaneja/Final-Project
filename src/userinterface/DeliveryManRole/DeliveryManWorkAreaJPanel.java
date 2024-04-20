@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author mittul.sharma
+ * @author kartik
  */
 public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 
