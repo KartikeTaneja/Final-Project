@@ -31,17 +31,13 @@ public abstract class Organization {
     
     public enum Type{
         
-        Admin("Admin Organization"), 
+        Admin("Administrative Agency"), 
         Nutrition("Nutrition Organization"), 
         Dietitian("Dietitian Organization"),
-        WeightTraining("Weight Training"),
+        WeightTraining("Strength Training"),
         FitnessTraining("Fitness Training"),
         Physiotherapist("Physiotherapist"),
-        GeneralPractitioner("General Practitioner"),
-        DormInventory("Dorm Inventory"),
-        Delivery("DeliveryMan"),
-        Service("Service"),
-        ServiceWorker("Service Worker"),
+        GeneralPractitioner("General Medical Practitioner"),
         Lab("Lab Organization"),
         Doctor("Doctor Organisation");
         

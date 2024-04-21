@@ -30,10 +30,10 @@ public class OrganizationDirectory {
             organization = new NutritionOrganization();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.WeightTraining.getValue())){
-            organization = new WeightTrainingOrganization();
+            organization = new OrgWeightTraining();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.FitnessTraining.getValue())){
-            organization = new FitnessTrainingOrganization();
+            organization = new OrgFitnessTraining();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.Physiotherapist.getValue())){
             organization = new PhysioOrganization();
