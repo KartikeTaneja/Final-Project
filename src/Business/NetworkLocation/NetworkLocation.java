@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Business.Network;
+package Business.NetworkLocation;
 
 import Business.Enterprise.EnterpriseDirectory;
 
@@ -11,11 +11,11 @@ import Business.Enterprise.EnterpriseDirectory;
  *
  * @author Tejaswini
  */
-public class Network {
+public class NetworkLocation {
     private String name;
     private EnterpriseDirectory enterpriseDirectory;
     
-    public Network(){
+    public NetworkLocation(){
         enterpriseDirectory=new EnterpriseDirectory();
     }
     public String getName() {
