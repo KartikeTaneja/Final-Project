@@ -1,2 +1,2 @@
 # Group 20
-# FitHub
+# Northeastern Fitness Hub
