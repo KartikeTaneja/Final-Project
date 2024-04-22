@@ -7,7 +7,6 @@ package Business.Enterprise;
 
 import Business.Organization.Organization;
 import Business.Organization.OrganizationDirectory;
-import Business.Inventory.DormInventoryDirectory;
 import java.util.ArrayList;
 
 /**
@@ -18,7 +17,6 @@ public abstract class Enterprise extends Organization{
     
     private EnterpriseType enterpriseType;
     private OrganizationDirectory organizationDirectory;
-    private DormInventoryDirectory dormInventoryDirectory;
     private ArrayList<Items> itemsList;
     private ArrayList<ServiceTypes> serviceTypeList;
     
@@ -34,32 +32,27 @@ public abstract class Enterprise extends Organization{
         return organizationDirectory;
     }
     
-    public DormInventoryDirectory getDormInventoryDirectory() {
-        return dormInventoryDirectory;
-    }
+    
     
     public enum EnterpriseType{
-        
-        DietUnit("Diet Unit"),
-        TrainerUnit("Trainer Unit"),
-        DoctorUnit("Doctor Unit"),
-        DormInventoryUnit("Dorm Inventory Unit"),
-        MaintenanceUnit("Maintenance Unit");
-        
-        private String value;
-        
-        private EnterpriseType(String value){
-            this.value=value;
-        }
-        
-        public String getValue() {
-            return value;
-        }
-        
-        @Override
-        public String toString(){
-            return value;
-        }
+         DietUnit("Healthy Living Center"),
+         TrainerUnit("Fitness Center"),
+         DoctorUnit("Healthcare Clinic");
+
+    private String value;
+
+    private EnterpriseType(String value){
+        this.value=value;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    @Override
+    public String toString(){
+        return value;
+    }
     }
 
     public ArrayList<Items> getItemsList() {
